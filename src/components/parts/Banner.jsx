@@ -1,28 +1,29 @@
 import { useEffect } from "react";
 import { servicesBanner } from "../../assets/img";
 import { BoxContainer, SpacingLayout } from "../../layouts";
-import { gsap } from "gsap-trial";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
-import { Button } from "flowbite-react";
-gsap.registerPlugin(ScrollTrigger, SplitText);
+import gsap from "gsap";
+// import { gsap } from "gsap-trial";
+// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+// import { SplitText } from "gsap-trial/SplitText";
+// import { Button } from "flowbite-react";
+// gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const Banner = ({ title, children, image, subtitle }) => {
-  useEffect(() => {
-    let tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".textParallax",
-        start: "top 20%",
-        end: "bottom 20%",
-        scrub: 1,
-      },
-    });
+  // useEffect(() => {
+  //   let tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: ".textParallax",
+  //       start: "top 20%",
+  //       end: "bottom 20%",
+  //       scrub: 1,
+  //     },
+  //   });
 
-    tl.from(".textParallax", { yPercent: 0 }).to(".textParallax", {
-      yPercent: 100,
-      ease: "back",
-    });
-  });
+  //   tl.from(".textParallax", { yPercent: 0 }).to(".textParallax", {
+  //     yPercent: 100,
+  //     ease: "back",
+  //   });
+  // });
   return (
     <div>
       <div className='w-full banner mt-7 relative '>

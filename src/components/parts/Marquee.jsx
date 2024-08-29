@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-//
+
 
 const items = [1, 2, 3, 4, 5, 6];
 

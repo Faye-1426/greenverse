@@ -1,29 +1,29 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { landingImg1 } from "../../assets/img";
-import gsap from "gsap-trial";
-import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import { SplitText } from "gsap-trial/SplitText";
 import { Button } from "../parts";
-gsap.registerPlugin(SplitText, ScrollTrigger);
+// import gsap from "gsap-trial";
+// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+// import { SplitText } from "gsap-trial/SplitText";
+// gsap.registerPlugin(SplitText, ScrollTrigger);
 
 const SectionLanding = () => {
-  const ourText = new SplitText(".left-title", { types: "chars" });
-  const chars = ourText.chars;
-  let timeLine = gsap.timeline();
+  // const ourText = new SplitText(".left-title", { types: "chars" });
+  // const chars = ourText.chars;
+  // let timeLine = gsap.timeline();
 
-  useEffect(() => {
-    timeLine.from(
-      chars,
-      {
-        opacity: 0,
-        yPercent: 20,
-        duration: 2,
-        ease: "back",
-        stagger: 0.05,
-      },
-      []
-    );
-  }, []);
+  // useEffect(() => {
+  //   timeLine.from(
+  //     chars,
+  //     {
+  //       opacity: 0,
+  //       yPercent: 20,
+  //       duration: 2,
+  //       ease: "back",
+  //       stagger: 0.05,
+  //     },
+  //     []
+  //   );
+  // }, []);
 
   return (
     <div className='wrapper grid grid-cols-1 lg:grid-cols-2 items-center'>
